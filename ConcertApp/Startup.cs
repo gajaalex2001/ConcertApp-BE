@@ -1,10 +1,15 @@
 ﻿using ConcertApp.API.DependencyRegistration;
+using ConcertApp.API.Middlewares;
+using ConcertApp.API.Requests.Users;
+using ConcertApp.API.Utility;
+using ConcertApp.API.Utility.CustomModelBinders;
 using ConcertApp.Business.Versions.Handlers;
 using ConcertApp.Data;
+using FluentValidation;
 using FluentValidation.AspNetCore;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Swashbuckle.AspNetCore.Swagger;
 
 namespace ConcertApp.API
 {
@@ -31,7 +36,12 @@ namespace ConcertApp.API
                 options.UseSqlServer(Configuration.GetConnectionString("SqlConnection"));
             });
 
-            services.AddMvc();
+            services.AddMvc()
+                .AddJsonOptions(options => options.JsonSerializerOptions.Converters.Add(new StringTrimmer()))
+                .AddMvcOptions(options => options.ModelBinderProviders.Insert(0, new CustomModelBinderProvider()));
+
+            services.AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CreateUserRequestValidator>());
+
             services.AddControllers();
             services.AddMediatR(cfg =>
             {
@@ -39,12 +49,6 @@ namespace ConcertApp.API
             });
 
             services.AddSwaggerGen();
-
-
-            services.AddFluentValidationAutoValidation().AddFluentValidationClientsideAdapters();
-
-                //.AddJsonOptions(options => options.JsonSerializerOptions.Converters.Add(new StringTrimmer()))
-                //.AddMvcOptions(options => options.ModelBinderProviders.Insert(0, new CustomModelBinderProvider()));
 
             services.Configure<ApiBehaviorOptions>(options => options.SuppressInferBindingSourcesForParameters = true);
 
@@ -55,11 +59,6 @@ namespace ConcertApp.API
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-
             app.UseDefaultFiles();
             app.UseStaticFiles();
             app.UseHttpsRedirection();
@@ -67,13 +66,10 @@ namespace ConcertApp.API
             app.UseRouting();
             app.UseCors();
 
-            app.UseAuthentication();
-            app.UseAuthorization();
-
             app.UseSwagger();
             app.UseSwaggerUI();
 
-            //app.UseMiddleware<CustomExceptionMiddleware>();
+            app.UseMiddleware<CustomExceptionMiddleware>();
 
             app.UseEndpoints(endpoints =>
             {

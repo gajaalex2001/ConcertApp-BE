@@ -1,5 +1,4 @@
 ﻿using ConcertApp.API.Requests.Versions;
-using ConcertApp.Business.Versions.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,7 +16,7 @@ namespace ConcertApp.API.Controllers
         }
 
         [HttpGet("get-version")]
-        public async Task<ActionResult<string>> GetVersion([FromQuery] GetVersionQuery request)
+        public async Task<ActionResult<string>> GetVersion([FromQuery] GetVersionRequest request)
         {
             var result = await _mediator.Send(request.ToQuery());
 
