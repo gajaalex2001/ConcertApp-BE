@@ -13,6 +13,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ConcertApp.Data\ConcertApp.Data.csproj" />
+    <ProjectReference Include="..\Utility\Utility.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Users\Models\" />
   </ItemGroup>
 
 </Project>
