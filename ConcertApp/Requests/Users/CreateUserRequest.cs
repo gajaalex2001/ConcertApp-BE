@@ -28,7 +28,7 @@ namespace ConcertApp.API.Requests.Users
             RuleFor(x => x.Password)
                 .NotEmpty()
                 .WithMessage(UserErrors.PasswordLength)
-                .Length(2, 20)
+                .Length(3, 30)
                 .WithMessage(UserErrors.PasswordLength)
                 .Matches(Regexes.NoWhiteSpace)
                 .WithMessage(UserErrors.PasswordFormat);

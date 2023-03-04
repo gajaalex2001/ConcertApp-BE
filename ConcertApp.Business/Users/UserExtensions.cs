@@ -1,4 +1,5 @@
 ﻿using ConcertApp.Business.Users.Commands;
+using ConcertApp.Business.Users.Models;
 using ConcertApp.Data.Models.Users;
 
 namespace ConcertApp.Business.Users
@@ -18,6 +19,17 @@ namespace ConcertApp.Business.Users
                     PhoneNumber = command.PhoneNumber
                 }
             };
+        }
+
+        public static IQueryable<UserInformation> ToUserInformation(this IQueryable<User> query)
+        {
+            return query.Select(q => new UserInformation
+            {
+                Email = q.Email,
+                FirstName = q.Detail.FirstName,
+                LastName = q.Detail.LastName,
+                PhoneNumber = q.Detail.PhoneNumber
+            });
         }
     }
 }
