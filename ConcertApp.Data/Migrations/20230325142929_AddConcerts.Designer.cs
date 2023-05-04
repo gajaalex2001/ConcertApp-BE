@@ -4,6 +4,7 @@ using ConcertApp.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ConcertApp.Data.Migrations
 {
     [DbContext(typeof(ConcertAppContext))]
-    partial class ConcertAppContextModelSnapshot : ModelSnapshot
+    [Migration("20230325142929_AddConcerts")]
+    partial class AddConcerts
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -44,13 +47,6 @@ namespace ConcertApp.Data.Migrations
                     b.Property<int>("Genre")
                         .HasColumnType("int");
 
-                    b.Property<string>("Location")
-                        .IsRequired()
-                        .ValueGeneratedOnAdd()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)")
-                        .HasDefaultValue("somewhere");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -62,32 +58,6 @@ namespace ConcertApp.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Concerts", (string)null);
-                });
-
-            modelBuilder.Entity("ConcertApp.Data.Models.UserConcerts.UserConcert", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("ConcertId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("UserStatus")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ConcertId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("UserConcerts");
                 });
 
             modelBuilder.Entity("ConcertApp.Data.Models.Users.User", b =>
@@ -184,25 +154,6 @@ namespace ConcertApp.Data.Migrations
                         });
                 });
 
-            modelBuilder.Entity("ConcertApp.Data.Models.UserConcerts.UserConcert", b =>
-                {
-                    b.HasOne("ConcertApp.Data.Models.Concerts.Concert", "Concert")
-                        .WithMany("UserConcerts")
-                        .HasForeignKey("ConcertId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("ConcertApp.Data.Models.Users.User", "User")
-                        .WithMany("UserConcerts")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Concert");
-
-                    b.Navigation("User");
-                });
-
             modelBuilder.Entity("ConcertApp.Data.Models.Users.UserDetail", b =>
                 {
                     b.HasOne("ConcertApp.Data.Models.Users.User", "User")
@@ -214,17 +165,10 @@ namespace ConcertApp.Data.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("ConcertApp.Data.Models.Concerts.Concert", b =>
-                {
-                    b.Navigation("UserConcerts");
-                });
-
             modelBuilder.Entity("ConcertApp.Data.Models.Users.User", b =>
                 {
                     b.Navigation("Detail")
                         .IsRequired();
-
-                    b.Navigation("UserConcerts");
                 });
 #pragma warning restore 612, 618
         }

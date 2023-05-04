@@ -1,6 +1,5 @@
 ﻿using ConcertApp.Business.Users.Commands;
 using ConcertApp.Business.Users.Queries;
-using System.ComponentModel.DataAnnotations;
 
 namespace ConcertApp.API.Requests.Users
 {

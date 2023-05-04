@@ -1,7 +1,6 @@
 ﻿using ConcertApp.Business.Users.Models;
 using ConcertApp.Business.Users.Queries;
 using ConcertApp.Data;
-using ConcertApp.Data.Models.Users;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Utility.ErrorMessages;

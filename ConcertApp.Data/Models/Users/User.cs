@@ -1,4 +1,6 @@
-﻿namespace ConcertApp.Data.Models.Users
+﻿using ConcertApp.Data.Models.UserConcerts;
+
+namespace ConcertApp.Data.Models.Users
 {
     public class User
     {
@@ -7,5 +9,6 @@
         public string Password { get; set; }
 
         public UserDetail Detail { get; set; }
+        public ICollection<UserConcert> UserConcerts { get; set; }
     }
 }

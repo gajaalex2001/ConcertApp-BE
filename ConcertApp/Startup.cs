@@ -5,9 +5,7 @@ using ConcertApp.API.Utility;
 using ConcertApp.API.Utility.CustomModelBinders;
 using ConcertApp.Business.Versions.Handlers;
 using ConcertApp.Data;
-using FluentValidation;
 using FluentValidation.AspNetCore;
-using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
