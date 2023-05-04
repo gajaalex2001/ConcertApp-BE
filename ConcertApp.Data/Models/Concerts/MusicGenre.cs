@@ -13,6 +13,7 @@
         Classical,
         Opera,
         Techno,
-        Dubstep
+        Dubstep,
+        Rap
     }
 }

@@ -8,8 +8,9 @@ namespace ConcertApp.Data.Configurations.Concerts
     {
         public void Configure(EntityTypeBuilder<Concert> builder) 
         {
-            builder.Property(x => x.Name).IsRequired().HasMaxLength(100);
+            builder.Property(x => x.Name).HasMaxLength(100).IsRequired();
             builder.Property(x => x.Description).HasMaxLength(2000);
+            builder.Property(x => x.Location).HasMaxLength(100).HasDefaultValue("somewhere").IsRequired();
             builder.Property(x => x.Capacity).IsRequired();
             builder.Property(x => x.StartDate).IsRequired();
             builder.Property(x => x.EndDate).IsRequired();
