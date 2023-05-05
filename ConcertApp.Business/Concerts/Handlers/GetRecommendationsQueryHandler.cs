@@ -5,6 +5,7 @@ using ConcertApp.Data.Models.UserConcerts;
 using ConcertApp.Data.Models.Users;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using Utility.ErrorMessages;
 using Utility.Exceptions.ErrorCodes;
 using Utility.Exceptions.Models;

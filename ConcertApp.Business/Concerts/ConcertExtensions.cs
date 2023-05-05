@@ -1,7 +1,6 @@
 ﻿using ConcertApp.Business.Concerts.Commands;
-using ConcertApp.Business.Users.Models;
 using ConcertApp.Data.Models.Concerts;
-using ConcertApp.Data.Models.UserConcerts;
+using Utility.Extensions;
 using BusinessModels = ConcertApp.Business.Concerts.Models;
 
 namespace ConcertApp.Business.Concerts
@@ -15,6 +14,7 @@ namespace ConcertApp.Business.Concerts
                 Name = command.Name,
                 Description = command.Description,
                 Genre = command.Genre,
+                Location = command.Location,
                 Capacity = command.Capacity,
                 StartDate = command.StartDate.ToUniversalTime(),
                 EndDate = command.EndDate.ToUniversalTime()
@@ -27,7 +27,7 @@ namespace ConcertApp.Business.Concerts
             {
                 Capacity = c.Capacity,
                 NoParticipants = c.UserConcerts.Count - 1,
-                Description = c.Description.Substring(0, 100),
+                Description = c.Description.Truncate(100),
                 Genre = c.Genre,
                 Location = c.Location,
                 StartDate = c.StartDate,
@@ -49,7 +49,7 @@ namespace ConcertApp.Business.Concerts
                 StartDate = c.StartDate,
                 EndDate = c.EndDate,
                 Id = c.Id,
-                Name = c.Name
+                Name = c.Name,
             });
         }
     }

@@ -69,11 +69,13 @@ namespace ConcertApp.API.Requests.Concerts
                 .Must(date => date.ToUniversalTime() > DateTime.UtcNow)
                 .WithMessage(ConcertErrors.StartDate);
 
-            RuleFor(x => x)
+            RuleFor(x => x.EndDate)
                 .NotEmpty()
                 .WithMessage(ConcertErrors.EndDate)
-                .Must(x => x.EndDate.ToUniversalTime() > DateTime.UtcNow)
-                .WithMessage(ConcertErrors.EndDate)
+                .Must(date => date.ToUniversalTime() > DateTime.UtcNow)
+                .WithMessage(ConcertErrors.EndDate);
+
+            RuleFor(x => x)
                 .Must(x => x.EndDate.ToUniversalTime() > x.StartDate.ToUniversalTime())
                 .WithMessage(ConcertErrors.EndDateAheadOfStartDate);
         }

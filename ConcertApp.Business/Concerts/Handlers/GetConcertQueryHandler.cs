@@ -1,7 +1,6 @@
 ﻿using ConcertApp.Business.Concerts.Models;
 using ConcertApp.Business.Concerts.Queries;
 using ConcertApp.Business.Users;
-using ConcertApp.Business.Users.Models;
 using ConcertApp.Data;
 using ConcertApp.Data.Models.UserConcerts;
 using MediatR;

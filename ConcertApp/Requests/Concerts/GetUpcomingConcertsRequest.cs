@@ -10,9 +10,9 @@ namespace ConcertApp.API.Requests.Concerts
         public DateTime CurrentDate { get; set; }
     }
 
-    public class GetUpcomingConcertRequestValidator : AbstractValidator<GetUpcomingConcertsRequest>
+    public class GetUpcomingConcertsRequestValidator : AbstractValidator<GetUpcomingConcertsRequest>
     {
-        public GetUpcomingConcertRequestValidator() 
+        public GetUpcomingConcertsRequestValidator() 
         {
             RuleFor(x => x.Email)
                 .NotEmpty()
