@@ -3,7 +3,7 @@ using ConcertApp.API.Middlewares;
 using ConcertApp.API.Requests.Users;
 using ConcertApp.API.Utility;
 using ConcertApp.API.Utility.CustomModelBinders;
-using ConcertApp.Business.Versions.Handlers;
+using ConcertApp.Business.Users.Handlers;
 using ConcertApp.Data;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
@@ -43,7 +43,7 @@ namespace ConcertApp.API
             services.AddControllers();
             services.AddMediatR(cfg =>
             {
-                cfg.RegisterServicesFromAssemblies(typeof(Startup).Assembly, typeof(GetVersionQueryHandler).Assembly);
+                cfg.RegisterServicesFromAssemblies(typeof(Startup).Assembly, typeof(LoginUserQueryHandler).Assembly);
             });
 
             services.AddSwaggerGen();
