@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ConcertApp.Business.Concerts.ConcertExtensions">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAACAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Concerts\ConcertExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.Business.Concerts.Commands.AddParticipantCommand" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Concerts\Commands\AddParticipantCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConcertApp.Business.Concerts.Commands.CreateConcertCommand" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAgAAAAAAIAAAQiAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Concerts\Commands\CreateConcertCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConcertApp.Business.Concerts.Commands.RemoveParticipantCommand" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="6.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Concerts\Commands\RemoveParticipantCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConcertApp.Business.Concerts.Handlers.AddParticipantCommandHandler" BaseTypeListCollapsed="true">
+    <Position X="2.75" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAABAABAAAAAAAAABAAAAIAGAAAAAIAAAA=</HashCode>
+      <FileName>Concerts\Handlers\AddParticipantCommandHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConcertApp.Business.Concerts.Handlers.CreateConcertCommandHandler" BaseTypeListCollapsed="true">
+    <Position X="2.75" Y="3.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAIAGQAAAAAAAAA=</HashCode>
+      <FileName>Concerts\Handlers\CreateConcertCommandHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConcertApp.Business.Concerts.Handlers.GetConcertQueryHandler" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAABAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Concerts\Handlers\GetConcertQueryHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConcertApp.Business.Concerts.Handlers.GetPageQueryHandler" BaseTypeListCollapsed="true">
+    <Position X="8.5" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAQAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Concerts\Handlers\GetPageQueryHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConcertApp.Business.Concerts.Handlers.GetRecommendationsQueryHandler" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="2.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAIACAAAAAAAAAA=</HashCode>
+      <FileName>Concerts\Handlers\GetRecommendationsQueryHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConcertApp.Business.Concerts.Handlers.GetUpcomingConcertsQueryHandler" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAIACAAAAAAAAAA=</HashCode>
+      <FileName>Concerts\Handlers\GetUpcomingConcertsQueryHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConcertApp.Business.Concerts.Handlers.RemoveParticipantCommandHandler" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAABAABAAAAAAAAABAAAAIAOAAAAAAAAAA=</HashCode>
+      <FileName>Concerts\Handlers\RemoveParticipantCommandHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConcertApp.Business.Concerts.Models.Concert">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAAAAAAIAAAQiAAAAAAAAABAAAEAAAAA=</HashCode>
+      <FileName>Concerts\Models\Concert.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.Business.Concerts.Models.ConcertDetails">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAAAAAAIAAAQiAAAIAAAAABAAAEAAAAA=</HashCode>
+      <FileName>Concerts\Models\ConcertDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.Business.Concerts.Queries.GetConcertQuery" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Concerts\Queries\GetConcertQuery.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConcertApp.Business.Concerts.Queries.GetPageQuery" BaseTypeListCollapsed="true">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAEEAABAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Concerts\Queries\GetPageQuery.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConcertApp.Business.Concerts.Queries.GetRecommendationsQuery" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Concerts\Queries\GetRecommendationsQuery.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConcertApp.Business.Concerts.Queries.GetUpcomingConcertsQuery" BaseTypeListCollapsed="true">
+    <Position X="2.75" Y="6.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Concerts\Queries\GetUpcomingConcertsQuery.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConcertApp.Business.Pagination.Page&lt;T&gt;">
+    <Position X="5.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pagination\Page.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.Business.Users.UserExtensions">
+    <Position X="5.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Users\UserExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.Business.Users.Commands.CreateUserCommand" BaseTypeListCollapsed="true">
+    <Position X="14.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAAAAAAAAAAQAAAAAAAAAACAAAAAAAAAAg=</HashCode>
+      <FileName>Users\Commands\CreateUserCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConcertApp.Business.Users.Handlers.CreateUserCommandHandler" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAACAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Users\Handlers\CreateUserCommandHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConcertApp.Business.Users.Handlers.LoginUserQueryHandler" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAIACAACAAAAAAA=</HashCode>
+      <FileName>Users\Handlers\LoginUserQueryHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConcertApp.Business.Users.Models.UserInformation">
+    <Position X="9" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Users\Models\UserInformation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.Business.Users.Queries.LoginUserQuery" BaseTypeListCollapsed="true">
+    <Position X="9" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Users\Queries\LoginUserQuery.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="ConcertApp.API.Program">
+    <Position X="9.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Startup">
+    <Position X="11.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAgAAACAAAAAA=</HashCode>
+      <FileName>Startup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Controllers.ConcertController">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAhACABAAABAAAAAAAgAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Controllers\ConcertController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Controllers.UserController">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Controllers\UserController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.DependencyRegistration.Services">
+    <Position X="13" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DependencyRegistration\Services.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Middlewares.CustomExceptionMiddleware">
+    <Position X="15.25" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAA=</HashCode>
+      <FileName>Middlewares\CustomExceptionMiddleware.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Models.ConcertFilters">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAEAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Models\ConcertFilters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Models.ConcertFiltersValidator">
+    <Position X="10.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ConcertFilters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Models.PageRequest">
+    <Position X="13.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PageRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Models.PageRequestValidator">
+    <Position X="12" Y="5.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\PageRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Requests.Concerts.AddParticipantRequest">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\Concerts\AddParticipantRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Requests.Concerts.AddParticipantRequestValidator">
+    <Position X="2.75" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\Concerts\AddParticipantRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Requests.Concerts.ConcertExtensions">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\Concerts\ConcertExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Requests.Concerts.CreateConcertRequest">
+    <Position X="13.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAgAAAAAAIAAAQiAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Requests\Concerts\CreateConcertRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Requests.Concerts.CreateConcertRequestValidator">
+    <Position X="0.5" Y="3.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\Concerts\CreateConcertRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Requests.Concerts.GetConcertRequest">
+    <Position X="15.25" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\Concerts\GetConcertRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Requests.Concerts.GetConcertRequestValidator">
+    <Position X="5.25" Y="3.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\Concerts\GetConcertRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Requests.Concerts.GetPageRequest">
+    <Position X="5.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Requests\Concerts\GetPageRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Requests.Concerts.GetPageRequestValidator">
+    <Position X="3" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\Concerts\GetPageRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Requests.Concerts.GetRecommendationsRequest">
+    <Position X="9.5" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\Concerts\GetRecommendationsRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Requests.Concerts.GetRecommendationsRequestValidator">
+    <Position X="7.25" Y="2.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\Concerts\GetRecommendationsRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Requests.Concerts.GetUpcomingConcertsRequest">
+    <Position X="0.5" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\Concerts\GetUpcomingConcertsRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Requests.Concerts.GetUpcomingConcertsRequestValidator">
+    <Position X="8" Y="3.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\Concerts\GetUpcomingConcertsRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Requests.Concerts.RemoveParticipantRequest">
+    <Position X="0.5" Y="5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\Concerts\RemoveParticipantRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Requests.Concerts.RemoveParticipantRequestValidator">
+    <Position X="5.25" Y="6.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\Concerts\RemoveParticipantRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Requests.Users.CreateUserRequest">
+    <Position X="3.25" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAAAAAAAAAAQAAAAAAAAAACAAAAAAAAAAg=</HashCode>
+      <FileName>Requests\Users\CreateUserRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Requests.Users.CreateUserRequestValidator">
+    <Position X="10.5" Y="2.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\Users\CreateUserRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Requests.Users.LoginUserRequest">
+    <Position X="11.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\Users\LoginUserRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Requests.Users.LoginUserRequestValidator">
+    <Position X="7" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\Users\LoginUserRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Requests.Users.UserExtensions">
+    <Position X="3.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Requests\Users\UserExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.API.Utility.CustomModelBinders.CustomModelBinderProvider" BaseTypeListCollapsed="true">
+    <Position X="14.75" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Utility\CustomModelBinders\CustomModelBinderProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConcertApp.API.Utility.CustomModelBinders.StringTrimmerBinder" BaseTypeListCollapsed="true">
+    <Position X="16.5" Y="6.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utility\CustomModelBinders\StringTrimmerBinder.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConcertApp.API.Utility.StringTrimmer">
+    <Position X="14.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Utility\StringTrimmer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

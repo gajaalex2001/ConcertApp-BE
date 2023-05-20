@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ConcertApp.Data.ConcertAppContext">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAIAIAAAAAAAAAAAAEAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>ConcertAppContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.Data.Configurations.Concerts.ConcertConfiguration" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configurations\Concerts\ConcertConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConcertApp.Data.Configurations.UserConcerts.UserConcertConfiguration" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configurations\UserConcerts\UserConcertConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConcertApp.Data.Configurations.Users.UserConfiguration" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configurations\Users\UserConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConcertApp.Data.Configurations.Users.UserDetailConfiguration" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configurations\Users\UserDetailConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ConcertApp.Data.Migrations.ConcertAppContextModelSnapshot">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Migrations\ConcertAppContextModelSnapshot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.Data.Models.Concerts.Concert">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAAAAAAIAAAQiAAAAAAABAAAAAEAAAAA=</HashCode>
+      <FileName>Models\Concerts\Concert.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.Data.Models.UserConcerts.UserConcert">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAAAAAAAAAIAAAAgAAAAAAAAAAAAAGAAAAAA=</HashCode>
+      <FileName>Models\UserConcerts\UserConcert.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.Data.Models.Users.User">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAAAAAAAAAAAAAAAAAAAAADAAAAAAAACAA=</HashCode>
+      <FileName>Models\Users\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConcertApp.Data.Models.Users.UserDetail">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAEAAAAAAAAAAAAAAQAgAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Models\Users\UserDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ConcertApp.Data.Models.Concerts.MusicGenre">
+    <Position X="2.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAhgABAACAAAAFAAAAAEAAKAAAAAAAgAAAIAAAA=</HashCode>
+      <FileName>Models\Concerts\MusicGenre.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ConcertApp.Data.Models.UserConcerts.UserStatus">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Models\UserConcerts\UserStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
