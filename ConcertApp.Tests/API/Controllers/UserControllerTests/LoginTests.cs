@@ -1,6 +1,5 @@
 ﻿using ConcertApp.API.Controllers;
 using ConcertApp.API.Requests.Users;
-using ConcertApp.Business.Users.Commands;
 using ConcertApp.Business.Users.Models;
 using ConcertApp.Business.Users.Queries;
 using FluentAssertions;
