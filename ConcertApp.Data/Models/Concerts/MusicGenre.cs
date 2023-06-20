@@ -14,6 +14,5 @@
         Opera,
         Techno,
         Dubstep,
-        Rap
     }
 }

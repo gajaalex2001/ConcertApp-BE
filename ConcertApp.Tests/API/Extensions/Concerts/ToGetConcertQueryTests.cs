@@ -16,11 +16,13 @@ namespace ConcertApp.Tests.API.Extensions.Users
             _request = new GetConcertRequest
             {
                 ConcertId = 1,
+                Email = "alex@gmail.com"
             };
 
             var command = _request.ToQuery();
 
             command.ConcertId.Should().Be(_request.ConcertId);
+            command.Email.Should().Be(_request.Email);
         }
     }
 }

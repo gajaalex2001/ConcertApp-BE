@@ -54,7 +54,8 @@ namespace ConcertApp.API.Requests.Concerts
         {
             return new GetConcertQuery
             {
-                ConcertId = request.ConcertId
+                ConcertId = request.ConcertId,
+                Email = request.Email,
             };
         }
 

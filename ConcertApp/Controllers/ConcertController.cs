@@ -42,7 +42,7 @@ namespace ConcertApp.API.Controllers
             return Ok(result);
         }
 
-        [HttpGet("get-concerts")]
+        [HttpPost("get-concerts")]
         public async Task<ActionResult<Page<Concert>>> GetConcerts([FromBody] GetPageRequest request)
         {
             var result = await _mediator.Send(request.ToQuery());
@@ -50,7 +50,7 @@ namespace ConcertApp.API.Controllers
             return Ok(result);
         }
 
-        [HttpGet("get-concert")]
+        [HttpPost("get-concert")]
         public async Task<ActionResult<ConcertDetails>> GetConcert([FromBody] GetConcertRequest request)
         {
             var result = await _mediator.Send(request.ToQuery());
@@ -58,7 +58,7 @@ namespace ConcertApp.API.Controllers
             return Ok(result);
         }
 
-        [HttpGet("get-upcoming-concerts")]
+        [HttpPost("get-upcoming-concerts")]
         public async Task<ActionResult<List<Concert>>> GetUpcomingConcerts([FromBody] GetUpcomingConcertsRequest request)
         {
             var result = await _mediator.Send(request.ToQuery());
@@ -66,7 +66,7 @@ namespace ConcertApp.API.Controllers
             return Ok(result);
         }
 
-        [HttpGet("get-recommendations")]
+        [HttpPost("get-recommendations")]
         public async Task<ActionResult<List<Concert>>> GetRecommendations([FromBody] GetRecommendationsRequest request)
         {
             var result = await _mediator.Send(request.ToQuery());

@@ -14,6 +14,7 @@ namespace ConcertApp.Business.Concerts.Models
         public int NoParticipants { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
+        public bool IsParticipating { get; set; }
 
         public UserInformation Organizer { get; set; }
     }

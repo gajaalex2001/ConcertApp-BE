@@ -62,7 +62,7 @@ namespace ConcertApp.Tests.Business.Users.Handlers
             _request.UserStatus = UserStatus.Organizer;
             var result = await _handler.Handle(_request, new CancellationToken());
 
-            result.NoItems.Should().Be(4);
+            result.NoItems.Should().Be(1);
             result.Items.Should().HaveCount(1);
         }
 

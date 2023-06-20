@@ -6,5 +6,6 @@ namespace ConcertApp.Business.Concerts.Queries
     public class GetConcertQuery : IRequest<ConcertDetails>
     {
         public int ConcertId { get; set; }
+        public string Email { get; set; }
     }
 }

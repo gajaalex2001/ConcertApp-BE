@@ -3,11 +3,13 @@ using ConcertApp.Business.Concerts.Queries;
 using ConcertApp.Business.Users;
 using ConcertApp.Data;
 using ConcertApp.Data.Models.UserConcerts;
+using ConcertApp.Data.Models.Users;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Utility.ErrorMessages;
 using Utility.Exceptions.ErrorCodes;
 using Utility.Exceptions.Models;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace ConcertApp.Business.Concerts.Handlers
 {
@@ -33,10 +35,19 @@ namespace ConcertApp.Business.Concerts.Handlers
             var organizer = await _context.Users
                 .Include(x => x.UserConcerts)
                 .Where(x => x.UserConcerts.Any(c => c.ConcertId == request.ConcertId && c.UserStatus == UserStatus.Organizer))
-                .ToUserInformation()
+            .ToUserInformation()
                 .FirstOrDefaultAsync();
 
+            var user = GetUser(request.Email);
+
+            ValidateUser(user);
+
+            var isParticipating = await _context.UserConcerts
+                .Where(x => x.ConcertId == request.ConcertId && x.UserId == user.Id && x.UserStatus == UserStatus.Participant)
+                .FirstOrDefaultAsync() != null;
+
             concert.Organizer = organizer;
+            concert.IsParticipating = isParticipating;
 
             return concert;
         }
@@ -46,6 +57,21 @@ namespace ConcertApp.Business.Concerts.Handlers
             if (concert is null)
             {
                 throw new CustomException(ErrorCodes.Concert_NotFound, ConcertErrors.NotFound);
+            }
+        }
+
+        private User GetUser(string email)
+        {
+            return _context.Users
+                .Where(x => x.Email == email)
+                .FirstOrDefault();
+        }
+
+        private void ValidateUser(User user)
+        {
+            if (user == null)
+            {
+                throw new CustomException(ErrorCodes.User_AccountNotFound, UserErrors.NotFound);
             }
         }
     }

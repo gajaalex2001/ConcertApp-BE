@@ -32,7 +32,7 @@ namespace ConcertApp.Business.Concerts.Handlers
             return new Page<BusinessModels.Concert>
             {
                 Items = items,
-                NoItems = concerts.Count()
+                NoItems = filteredConcerts.Count()
             };
         }
 

@@ -49,6 +49,7 @@ namespace ConcertApp.Tests.Business.Users.Handlers
             result.Genre.Should().Be(MusicGenre.Rock);
             result.Location.Should().Be("somewhere");
             result.Name.Should().Be("Test");
+            result.IsParticipating.Should().BeFalse();
         }
 
         [Test]
@@ -304,6 +305,7 @@ namespace ConcertApp.Tests.Business.Users.Handlers
             _request = new GetConcertQuery
             {
                 ConcertId = 1,
+                Email = "hehe@gmail.com"
             };
         }
     }

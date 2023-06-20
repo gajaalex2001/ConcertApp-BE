@@ -32,25 +32,29 @@ namespace ConcertApp.Business.Concerts.Handlers
             var genres = await _context.UserConcerts
                 .Where(x => x.UserId == user.Id && x.UserStatus == UserStatus.Participant)
                 .Select(x => x.Concert.Genre)
+                .OrderBy(r => Guid.NewGuid())
                 .Distinct()
-                .Take(3)
                 .ToListAsync();
 
             List<Concert> concerts = await _context.Concerts
                 .Include(x => x.UserConcerts)
-                .Where(x => x.UserConcerts.All(c => c.UserId != user.Id && genres.Contains(c.Concert.Genre)))
-                .Take(5)
+                .Where(x => x.UserConcerts.All(c => c.UserId != user.Id && genres.Contains(c.Concert.Genre)) && x.StartDate > DateTime.UtcNow)
+                .OrderBy(r => Guid.NewGuid())
+                .Take(3)
                 .ToConcertCard()
                 .ToListAsync();
 
-            if (concerts.Count == 0)
+            if (concerts.Count < 3)
             {
-                return await _context.Concerts
+                var extraConcerts = await _context.Concerts
                     .Include(x => x.UserConcerts)
-                    .Where(x => x.UserConcerts.All(c => c.UserId != user.Id))
-                    .Take(5)
+                    .Where(x => x.UserConcerts.All(c => c.UserId != user.Id) && x.StartDate > DateTime.UtcNow)
+                    .OrderBy(r => Guid.NewGuid())
+                    .Take(3 - concerts.Count)
                     .ToConcertCard()
                     .ToListAsync();
+
+                concerts = concerts.Concat(extraConcerts).ToList();
             }
 
             return concerts;

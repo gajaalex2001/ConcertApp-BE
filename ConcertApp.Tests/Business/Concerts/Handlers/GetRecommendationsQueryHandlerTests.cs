@@ -44,7 +44,7 @@ namespace ConcertApp.Tests.Business.Users.Handlers
         {
             var result = await _handler.Handle(_request, new CancellationToken());
 
-            result.Count.Should().Be(3);
+            result.Count.Should().Be(2);
         }
 
         [Test]

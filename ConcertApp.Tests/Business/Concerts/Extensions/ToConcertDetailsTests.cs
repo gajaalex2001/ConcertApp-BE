@@ -25,7 +25,7 @@ namespace ConcertApp.Tests.Business.Users.Extensions
                     Description = "description",
                     StartDate = now,
                     EndDate = now.AddDays(2),
-                    Genre = MusicGenre.Rap,
+                    Genre = MusicGenre.HipHop,
                     Location = "somewhere",
                     Name = "name",
                     UserConcerts = new List<UserConcert>
@@ -54,7 +54,7 @@ namespace ConcertApp.Tests.Business.Users.Extensions
             result.Should().BeOfType<BusinessModels.ConcertDetails>();
             result.NoParticipants.Should().Be(1);
             result.Description.Should().Be("description");
-            result.Genre.Should().Be(MusicGenre.Rap);
+            result.Genre.Should().Be(MusicGenre.HipHop);
             result.Location.Should().Be("somewhere");
             result.StartDate.Should().Be(now);
             result.EndDate.Should().Be(now.AddDays(2));
